@@ -13,26 +13,26 @@
     },
     {
         "name": "日進月歩",
-        "name_en": "name_en",
-        "description": "description",
-        "description_en": "description_en"
+        "name_en": "Nisshin Geppo",
+        "description": "絶え間なく進歩・発展すること。",
+        "description_en": "Constant progress and development."
     },
     {
         "name": "自業自得",
-        "name_en": "name_en",
-        "description": "description",
-        "description_en": "description_en"
+        "name_en": "Jigou Jitoku",
+        "description": "自分の行いの報いを自分で受けること。",
+        "description_en": "Reaping the consequences of one's own actions."
     },
     {
         "name": "百花繚乱",
-        "name_en": "name_en",
-        "description": "description",
-        "description_en": "description_en"
+        "name_en": "Hyakka Ryouran",
+        "description": "多くの優れたものが同時に現れ、華やかに栄えること。",
+        "description_en": "Many outstanding things flourish together in a spectacular display."
     },
     {
         "name": "臥薪嘗胆",
-        "name_en": "name_en",
-        "description": "description",
-        "description_en": "description_en"
+        "name_en": "Gashin Shoutan",
+        "description": "成功を目指して苦労や辛抱を重ねること。",
+        "description_en": "Enduring hardship and patience to achieve success."
     }
 ]
