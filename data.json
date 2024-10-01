@@ -10,5 +10,23 @@
         "name_en": "Senpen Banka",
         "description": "物事がさまざまに変わること。",
         "description_en": "Things change in various ways."
+    },
+    {
+        "name": "日進月歩",
+        "name_en": "name_en",
+        "description": "description",
+        "description_en": "description_en"
+    },
+    {
+        "name": "自業自得",
+        "name_en": "name_en",
+        "description": "description",
+        "description_en": "description_en"
+    },
+    {
+        "name": "百花繚乱",
+        "name_en": "name_en",
+        "description": "description",
+        "description_en": "description_en"
     }
 ]
