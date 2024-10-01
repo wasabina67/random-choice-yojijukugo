@@ -7,7 +7,7 @@
     </h1>
     <p>{{ description }}</p>
     <p>{{ descriptionEn }}</p>
-    <button @click="init">次へ</button>
+    <button @click="init">Next</button>
   </div>
 </template>
 
