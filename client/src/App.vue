@@ -22,7 +22,12 @@ export default {
   },
   methods: {
     async init() {
-      console.log('helloworld')
+      try {
+        const resp = await axios.get(this.baseUrl + '/api/yojijukugo')
+        console.log(resp)
+      } catch (e) {
+        alert(e)
+      }
     }
   }
 }
