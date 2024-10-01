@@ -5,8 +5,10 @@
         {{ name }}<rt>{{ name_en }}</rt>
       </ruby>
     </h1>
-    <p>{{ description }}</p>
-    <p>{{ description_en }}</p>
+    <div class="description">
+      <p>{{ description }}</p>
+      <p>{{ description_en }}</p>
+    </div>
   </div>
 </template>
 
@@ -55,5 +57,9 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
   margin-left: 60px;
+}
+
+.description {
+  margin-left: 20px;
 }
 </style>
