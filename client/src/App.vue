@@ -1,5 +1,9 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <h1>
+    <ruby>
+      {{ name }}<rt>{{ name_en }}</rt>
+    </ruby>
+  </h1>
 </template>
 
 <script>
@@ -13,6 +17,10 @@ export default {
     return {
       nodeEnv: '',
       baseUrl: '',
+      name: '',
+      name_en: '',
+      description: '',
+      description_en: '',
     }
   },
   mounted() {
@@ -24,7 +32,10 @@ export default {
     async init() {
       try {
         const resp = await axios.get(this.baseUrl + '/api/yojijukugo')
-        console.log(resp)
+        this.name = resp.data.name
+        this.name_en = resp.data.name_en
+        this.description = resp.data.description
+        this.description_en = resp.data.description_en
       } catch (e) {
         alert(e)
       }
