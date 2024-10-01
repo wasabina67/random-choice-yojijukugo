@@ -2,12 +2,12 @@
   <div>
     <h1>
       <ruby>
-        {{ name }}<rt>{{ name_en }}</rt>
+        {{ name }}<rt>{{ nameEn }}</rt>
       </ruby>
     </h1>
     <div class="description">
       <p>{{ description }}</p>
-      <p>{{ description_en }}</p>
+      <p>{{ descriptionEn }}</p>
     </div>
   </div>
 </template>
@@ -24,9 +24,9 @@ export default {
       nodeEnv: '',
       baseUrl: '',
       name: '',
-      name_en: '',
+      nameEn: '',
       description: '',
-      description_en: '',
+      descriptionEn: '',
     }
   },
   mounted() {
@@ -39,9 +39,9 @@ export default {
       try {
         const resp = await axios.get(this.baseUrl + '/api/yojijukugo')
         this.name = resp.data.name
-        this.name_en = resp.data.name_en
+        this.nameEn = resp.data.name_en
         this.description = resp.data.description
-        this.description_en = resp.data.description_en
+        this.descriptionEn = resp.data.description_en
       } catch (e) {
         alert(e)
       }
@@ -61,5 +61,9 @@ export default {
 
 .description {
   margin-left: 15px;
+}
+
+button {
+  margin-top: 15px;
 }
 </style>
