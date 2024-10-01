@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from flask import Flask, jsonify, send_from_directory
 from flask_cors import CORS  # type: ignore
 
-load_dotenv()
+load_dotenv(override=True)
 
 if os.getenv("USE_FLASK_CORS") == "true":
     app = Flask(__name__)
