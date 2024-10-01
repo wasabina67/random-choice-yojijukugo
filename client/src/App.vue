@@ -55,11 +55,11 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: left;
   color: #2c3e50;
-  margin-top: 60px;
-  margin-left: 60px;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 .description {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 </style>
