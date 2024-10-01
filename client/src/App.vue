@@ -4,6 +4,8 @@
       {{ name }}<rt>{{ name_en }}</rt>
     </ruby>
   </h1>
+  <p>{{ description }}</p>
+  <p>{{ description_en }}</p>
 </template>
 
 <script>
