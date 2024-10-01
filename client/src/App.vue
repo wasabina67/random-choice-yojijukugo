@@ -6,6 +6,22 @@
 export default {
   name: 'App',
   components: {
+  },
+  data() {
+    return {
+      nodeEnv: '',
+      baseUrl: '',
+    }
+  },
+  mounted() {
+    this.nodeEnv = process.env.NODE_ENV
+    this.baseUrl = this.nodeEnv === 'production' ? '' : 'http://127.0.0.1:5000'
+    this.init()
+  },
+  methods: {
+    async init() {
+      console.log('helloworld')
+    }
   }
 }
 </script>
