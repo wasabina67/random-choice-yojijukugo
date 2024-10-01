@@ -1,14 +1,14 @@
 [
     {
         "name": "一期一会",
-        "name_en": "",
+        "name_en": "Ichi-go Ichi-e",
         "description": "一生に一度の出会い。",
-        "description_en": ""
+        "description_en": "A once-in-a-lifetime encounter."
     },
     {
         "name": "千変万化",
-        "name_en": "",
+        "name_en": "Senpen Banka",
         "description": "物事がさまざまに変わること。",
-        "description_en": ""
+        "description_en": "Things change in various ways."
     }
 ]
