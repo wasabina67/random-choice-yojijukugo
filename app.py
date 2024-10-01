@@ -1,8 +1,10 @@
+import json
 import os
+import random
 
 from dotenv import load_dotenv
-from flask import Flask, jsonify, send_from_directory  # noqa
-from flask_cors import CORS
+from flask import Flask, jsonify, send_from_directory
+from flask_cors import CORS  # type: ignore
 
 load_dotenv()
 
@@ -24,3 +26,10 @@ else:
     @app.route("/<path:path>")
     def server_vue_static(path):
         return send_from_directory(app.static_folder, path)
+
+
+@app.route("/api/yojijukugo", methods=["GET"])
+def apt_yojijukugo_get():
+    with open("data.json", "r", encoding="utf-8") as f:
+        data_list = json.load(f)
+    return jsonify(random.choice(data_list))
