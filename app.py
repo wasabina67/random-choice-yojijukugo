@@ -33,3 +33,7 @@ def apt_yojijukugo_get():
     with open("data.json", "r", encoding="utf-8") as f:
         data_list = json.load(f)
     return jsonify(random.choice(data_list))
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
