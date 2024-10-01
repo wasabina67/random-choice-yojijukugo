@@ -8,6 +8,7 @@
     <div class="description">
       <p>{{ description }}</p>
       <p>{{ descriptionEn }}</p>
+      <button @click="init">次へ</button>
     </div>
   </div>
 </template>
