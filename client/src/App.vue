@@ -5,11 +5,9 @@
         {{ name }}<rt>{{ nameEn }}</rt>
       </ruby>
     </h1>
-    <div class="description">
-      <p>{{ description }}</p>
-      <p>{{ descriptionEn }}</p>
-      <button @click="init">次へ</button>
-    </div>
+    <p>{{ description }}</p>
+    <p>{{ descriptionEn }}</p>
+    <button @click="init">次へ</button>
   </div>
 </template>
 
@@ -58,10 +56,6 @@ export default {
   color: #2c3e50;
   margin-top: 30px;
   margin-left: 30px;
-}
-
-.description {
-  margin-left: 15px;
 }
 
 button {
