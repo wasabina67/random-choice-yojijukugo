@@ -21,6 +21,12 @@ pipenv install --dev
 python app.py
 ```
 
+#### redis
+
+```bash
+docker-compose up -d
+```
+
 ### vue3
 
 ```bash
@@ -47,6 +53,12 @@ echo "USE_FLASK_CORS=false" > .env
 
 ```bash
 python app.py
+```
+
+#### redis
+
+```bash
+docker-compose up -d
 ```
 
 Open http://127.0.0.1:5000
