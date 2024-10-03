@@ -5,6 +5,7 @@ import random
 from dotenv import load_dotenv
 from flask import Flask, jsonify, send_from_directory
 from flask_cors import CORS  # type: ignore
+from redis import Redis
 
 load_dotenv(override=True)
 
@@ -32,6 +33,10 @@ else:
 def apt_yojijukugo_get():
     with open("data.json", "r", encoding="utf-8") as f:
         data_list = json.load(f)
+
+    r = Redis(host="localhost", port=6379)
+    print(f'{r.incr("hits")} times.')
+
     return jsonify(random.choice(data_list))
 
 
