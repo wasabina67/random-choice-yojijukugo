@@ -1,7 +1,7 @@
 # random-choice-yojijukugo
 Randomly select one yojijukugo (four-character idiom)
 
-<details><summary>todolist_flask.mp4</summary>
+<details><summary>random_choice_yojijukugo.mp4</summary>
 
 <video controls src="https://github.com/user-attachments/assets/8b3e39ad-09b7-45fe-b53b-55d0616f4578" muted="false"></video>
 
