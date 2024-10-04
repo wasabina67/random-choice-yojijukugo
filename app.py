@@ -35,9 +35,15 @@ def apt_yojijukugo_get():
         data_list = json.load(f)
 
     r = Redis(host="localhost", port=6379)
-    print(f'{r.incr("hits")} times.')
 
-    return jsonify(random.choice(data_list))
+    key = "k"
+    if not r.exists(key):
+        index_list = list(range(len(data_list)))
+        random.shuffle(index_list)
+        r.lpush(key, *index_list)
+    idx = int(r.lpop(key))
+
+    return jsonify(data_list[idx])
 
 
 if __name__ == "__main__":
