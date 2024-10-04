@@ -3,7 +3,7 @@ Randomly select one yojijukugo (four-character idiom)
 
 <details><summary>random_choice_yojijukugo.mp4</summary>
 
-<video controls src="https://github.com/user-attachments/assets/8b3e39ad-09b7-45fe-b53b-55d0616f4578" muted="false"></video>
+<video controls src="https://github.com/user-attachments/assets/baf60d72-6eb4-482c-b971-79a7f70f0d37" muted="false"></video>
 
 </details>
 
